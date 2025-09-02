@@ -5,7 +5,7 @@ import { NavLink} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='nav'>
-         <img width={450} src="heclogo.png" alt="" />
+       <a href="/home"> <img width={462} src="heclogo.png" alt="img not found" />  </a> 
      <ul>
         <li> <NavLink className={(e)=>e.isActive?"underline":""} to="/home" >Home</NavLink></li>
         <li> <NavLink className={(e)=>e.isActive?"underline":""} to="/form" >Admission Form</NavLink></li>

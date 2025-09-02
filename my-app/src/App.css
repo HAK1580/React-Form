@@ -15,10 +15,10 @@ li  {
   color: white;
   text-decoration-line: none;
   list-style-type: none;
-  margin: 0px 12px ;
+  margin: 2px 12px ;
   letter-spacing: 0.5px ;
   font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.64rem;
   position: relative;
 
 }
@@ -43,14 +43,14 @@ li:hover::after{
    text-decoration: underline;
    text-decoration-thickness: 2px;
    text-decoration-color:  whitesmoke;
-   text-underline-offset: 13px;
+   text-underline-offset: 13.5px;
 }
 li::after{
   content: "";
   height: 2.5px;
   position: absolute;
   width: 0;
-  bottom: -4px;
+  bottom: -3px;
   left: 0;
   background-color: white;
   transition: width 0.4s ease-in-out;
