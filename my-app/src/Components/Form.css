@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+
 .formhead{
   border: 1px solid transparent;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: green;
 }
 /* For Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -13,11 +17,12 @@ input::-webkit-inner-spin-button {
 }
 .formhead h1{
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.65rem;
     margin: 1rem auto;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
+  }
+  .formhead h2{
+  text-align: center;
+  font-size: 2.75rem ;
 }
 input{
   border: 1px solid grey ;
@@ -33,22 +38,32 @@ input{
   }
 .submit{
     cursor: pointer;
-  width: 40%;
-  font-size: 1.3rem;
+  width: 45%;
+  font-size: 1.4rem;
+  border-radius: 8px;
 }
 .submit:hover{
-  background-color: blue;
+  background-color: rgba(0, 128, 0, 0.792);
   color: white;
 }
 .formdiv{
-  border: 2px solid red ;
   max-width: 40vw;
-  margin: 3rem auto;
+  margin: 1.7rem auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 form{
+  
+  background: rgba(255, 255, 255, 0.1); /* transparent glassy look */
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   gap: 1rem;

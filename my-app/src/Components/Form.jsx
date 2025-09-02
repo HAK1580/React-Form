@@ -9,21 +9,10 @@ const Form = () => {
   const onSubmit = data => {
     console.log(data);
     reset();
-
+  
   }
 
-  const handleCNICChange = (e) => {
-    let value = e.target.value.replace(/\D/g, ""); // non-digits hatao
 
-    if (value.length > 5 && value.length <= 12) {
-      value = value.slice(0, 5) + "-" + value.slice(5);
-    } 
-    if (value.length > 12) {
-      value = value.slice(0, 5) + "-" + value.slice(5, 12) + "-" + value.slice(12, 13);
-    }
-
-    e.target.value = value;
-  };
 
 
 
@@ -32,10 +21,11 @@ const Form = () => {
 
 
   return (
-    < div style={{ backgroundColor: "#d0dddafc", color: "black", }}  >
+    < div  style={{ backgroundColor: "#d0dddafc", color: "black",width:"100%" }}  >
 
       <div className="formhead">
-        <h1>ADMISSION FORM</h1>
+        <h1>Government of Punjab </h1>
+        <h2> University Admission Form</h2>
 
         <div className="formdiv">
 
@@ -66,7 +56,7 @@ const Form = () => {
             <input {...register("phone", {
               required: "Phone number required",
               pattern: {
-                value: /^[0-9+\-\s]{7,20}$/
+                value: /^03[0-9]{9}$/
                 , message: "Enter valid Pakistani number e.g. 03001234567"
               },
               minLength: { value: 11, message: "Must be 11 digits" },
@@ -79,13 +69,13 @@ const Form = () => {
 
             <input {...register("cnic", {
               required: "CNIC / B-Form is required",
-              pattern: { value: /^[0-9]{5}-[0-9]{7}-[0-9]{1}$/, message: "Format: 12345-1234567-1" }
-            })} type="text" placeholder="Enter CNIC / B-Form Number" maxLength={15} onChange={handleCNICChange} />
+              pattern: { value:/^[0-9]{5}-[0-9]{7}-[0-9]{1}$/, message: "Format: 12345-1234567-1" }
+            })} type="text" placeholder="Enter CNIC / B-Form Number" maxLength={15}  />
             {errors.cnic && <p className="error">* {errors.cnic.message}</p>}
 
 
 
-            <input {...register("age", { required: "Enter Age", pattern: { value: /^(?:1[01][0-9]|120|[1-9]?[0-9])$/, message: "Invalid age" }, min: { value: 18, message: "You are not eligible to apply" } })} type="number" placeholder=' Age' />
+            <input {...register("age", { required: "Enter Age", pattern: { value: /^(?:1[01][0-9]|120|[1-9]?[0-9])$/, message: "Invalid age" },max:{value:90,message:"You are too Old"} , min: { value: 18, message: "You are not eligible to apply" } })} type="tel" maxLength={3} placeholder=' Age' />
             {errors.age&&<p className="error">* {errors.age.message}  </p> }
 
                <select className='select' {...register("district", { required: "Enter your City/District" })} defaultValue="" >
@@ -111,10 +101,10 @@ const Form = () => {
 
 
 
-            <input {...register("MatricPercentage", { required: "Matric Percentage required", pattern: { value: /^(100(\.\d{1,2})?|(\d{1,2}(\.\d{1,2})?))$/, message: " Invalid Percentage" } })} type="number" step={"any"} placeholder='Percentage secured in Metric Exam' />
+            <input {...register("MatricPercentage", { required: "Matric Percentage required", pattern: { value: /^(100(\.\d{1,2})?|(\d{1,2}(\.\d{1,2})?))$/, message: " Invalid Percentage" },maxLength:{value:4}, min:{value:50,message:"Your are not Eligible "} })} type="tel" step={"any"}  maxLength={4} placeholder='Percentage secured in Metric Exam' />
             {errors.MatricPercentage && <p className="error"  >* {errors.MatricPercentage.message}  </p>}
 
-            <input {...register("FscPercentage", { required: "Intermediate Percentage required", pattern: { value: /^(100(\.\d{1,2})?|(\d{1,2}(\.\d{1,2})?))$/, message: " Invalid Percentage" } })} type="number" step={"any"} placeholder='Percentage secured in Intermediate Exam' />
+            <input {...register("FscPercentage", { required: "Intermediate Percentage required", pattern: { value: /^(100(\.\d{1,2})?|(\d{1,2}(\.\d{1,2})?))$/, message: " Invalid Percentage" },maxLength:{value:4},min:{value:50,message:"You are not Eligible"} })} type="tel" step={"any"} maxLength={4}  placeholder='Percentage secured in Intermediate Exam' />
             {errors.FscPercentage && <p className="error"  >* {errors.FscPercentage.message}  </p>}
 
 
@@ -125,6 +115,9 @@ const Form = () => {
               </option>
               <option value="Government Post Graduate College, Town Rawalpindi">
                 Government Post Graduate College, Town Rawalpindi
+              </option>
+              <option value="Government Post Graduate College Asghar Mall, Rawalpindi">
+                Government Post Graduate College Asghar Mall, Rawalpindi
               </option>
               <option value="Govt Post Graduate College for Women Satellite Town, Rawalpindi">
                 Govt. Post Graduate College for Women, Satellite Town Rawalpindi
