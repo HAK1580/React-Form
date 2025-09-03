@@ -12,7 +12,7 @@ function App() {
     [
 
       {
-        path:"/home",
+        path:"/",
         element: <> <Navbar/> <Home />  </>  
       },
       {
