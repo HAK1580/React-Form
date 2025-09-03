@@ -1,10 +1,18 @@
-h1{
+.main-contact h1{
      margin: 1rem auto;
-     font-size: 4rem;
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight:700;
+     font-size: 4.1rem;
+     letter-spacing: 1px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight:600;
      text-align: center;
      color: green ;
+}
+.contacts h2{
+     text-align: center;
+    color:rgb(4, 117, 4);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 100;
 }
 .contact_head{
     font-size: 3rem;
@@ -29,7 +37,8 @@ h1{
     box-shadow: 0 12px 52px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
     max-width: 96vw;
-    margin: 4.1rem auto;
+    margin: 3.1rem auto;
     display: flex;
+    /* border: 2PX SOLID red ; */
     gap: 6rem;
 }

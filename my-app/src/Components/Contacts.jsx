@@ -4,16 +4,18 @@ import './Contacts.css'
 
 const Contacts = () => {
   return (
-    <div>
-        <h1>CONTACTS </h1>
-       <h1 className='contact_head' >   ​For general correspondence/ queries, please feel free to contact with following officers:</h1>
-
+    <div className='main-contact'>
+        <h1 >CONTACTS </h1>
+        
 <div className="contacts_div">
 
 <div className="contacts">
   <h2 style={{fontSize:"3rem",margin:"1rem auto"}}>Contact Information</h2>
-  <h3 style={{fontStyle:"italic",margin:"1rem auto"}} >Head Office, Sector H-9, East Service Road, Islamabad
-   Phone: UAN: (051) 111-119-432</h3>
+  <h3 style={{fontStyle:"italic",margin:"1rem auto"}} >
+
+    ​For General correspondence/ queries, please feel free to contact with following Officers:
+  </h3>
+  
 
 <h2>
 <h3> Ms. Afeefa Irshad </h3>

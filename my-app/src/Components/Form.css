@@ -17,12 +17,12 @@ input::-webkit-inner-spin-button {
 }
 .formhead h1{
     text-align: center;
-    font-size: 2.65rem;
+    font-size: 2.8rem;
     margin: 1rem auto;
   }
   .formhead h2{
   text-align: center;
-  font-size: 2.75rem ;
+  font-size: 3.2rem ;
 }
 input{
   border: 1px solid grey ;
