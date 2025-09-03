@@ -1,0 +1,35 @@
+h1{
+     margin: 1rem auto;
+     font-size: 4rem;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight:700;
+     text-align: center;
+     color: green ;
+}
+.contact_head{
+    font-size: 3rem;
+    font-weight: 100;
+    max-width: 70vw;
+}
+.contacts{
+    /* border: 2px solid white ; */
+    margin: 0px 0px 0px 1.2rem ;
+    max-width: 53vw;
+    font-size:1.25rem;
+    line-height: 3.5rem;
+    color: rgb(0, 128, 96);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* margin: auto; */
+}
+.contacts_div{
+    border: 1px solid  rgba(255, 255, 255, 0.1) ;
+    background-color: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 52px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+    max-width: 96vw;
+    margin: 4.1rem auto;
+    display: flex;
+    gap: 6rem;
+}

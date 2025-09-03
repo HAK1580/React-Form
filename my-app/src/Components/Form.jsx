@@ -21,7 +21,7 @@ const Form = () => {
 
 
   return (
-    < div  style={{ backgroundColor: "#d0dddafc", color: "black",width:"100%" }}  >
+    < div  style={{  color: "black" }}  >
 
       <div className="formhead">
         <h1>Government of Punjab </h1>
@@ -181,8 +181,8 @@ const Form = () => {
 
 
             <p className='cnic'>* Upload CNIC Img</p>
-            <input className='upload'  {...register("documents")} type="file" placeholder='Upload your CNIC img ' accept=".pdf,.jpg,.png" />
-
+            <input className='upload'  {...register("cnicUpload",{required:"Upload your CNIC here"})} type="file" placeholder='Upload your CNIC img ' accept=".pdf,.jpg,.png" />
+            {errors.cnicUpload&&<p className='error'>* {errors.cnicUpload.message}</p> }
             <input type="submit" className='submit' />
           </form>
 
