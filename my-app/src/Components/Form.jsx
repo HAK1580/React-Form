@@ -2,26 +2,20 @@ import React from 'react'
 import './Form.css'
 import { useForm } from 'react-hook-form'
 
-const Form = () => {
+  function Form() {
+    const { register, handleSubmit, reset ,formState: { errors } } = useForm();
+    
 
-  const { register, reset, handleSubmit, watch, formState: { errors } } = useForm();
+const onSubmit = data => {
+ console.log(data);
+ reset();
+ alert("form submited successfully!")
+};
 
-  const onSubmit = data => {
-    console.log(data);
-    reset();
+
   
-  }
-
-
-
-
-
-
-
-
-
-  return (
-    < div  style={{  color: "black" }}  >
+    return (
+      < div  style={{  color: "black" }}  >
 
       <div className="formhead">
         <h1>Government of Punjab </h1>

@@ -307,3 +307,83 @@ form{
         width: 95%;
     }
 }
+
+/* Large screens / PC >= 1025px */
+@media (min-width: 1025px) {
+  .formhead h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .formhead h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 1rem auto 2rem auto;
+  }
+
+  .formdiv {
+    max-width: 700px; /* makes the form centered and wide enough */
+    margin: 3rem auto;
+  }
+
+  form {
+    max-width: 700px;
+    padding: 3rem;
+    gap: 2rem;
+  }
+
+  input,
+  .select,
+  .upload {
+    width: 98%;      /* consistent width for all fields */
+    font-size: 1.3rem;
+    padding: 15px 22px;
+  }
+
+  .submit {
+    width: 40%;
+    font-size: 1.5rem;
+    padding: 12px 0;
+    margin: 1.5rem auto;
+    display: block;
+  }
+
+  .gender {
+    font-size: 1.2rem;
+    padding: 12px 22px;
+  }
+
+  .cnic,
+  .error {
+    margin: 0 12px;
+    font-size: 1.2rem;
+    width: 98%;
+  }
+}
+/* Large screens / PC */
+@media (min-width: 1200px) {
+    .formdiv {
+        max-width: 35vw; /* reduce width to look better on big screens */
+        margin: 3rem auto;
+    }
+
+    form {
+        max-width: 500px; /* slightly smaller form box */
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    input,
+    .select,
+    .upload {
+        width: 97%;
+        padding: 12px 20px;
+        font-size: 1.2rem;
+    }
+
+    .submit {
+        width: 50%;
+        font-size: 1.4rem;
+    }
+}
