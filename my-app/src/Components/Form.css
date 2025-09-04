@@ -104,3 +104,206 @@ form{
   font-size: 1.12rem;
   color: red;
 }
+
+/* ------------------------ */
+/* FORCE FULL RESPONSIVE FORM */
+/* ------------------------ */
+
+/* Small screens / iPhones <= 414px */
+@media (max-width: 414px) {
+    .formhead h1,
+    .formhead h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 1rem auto;
+        width: 95%;
+    }
+
+    .formdiv {
+        max-width: 95%;
+        margin: 1rem auto;
+        padding: 0 10px;
+    }
+
+    form {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+
+    input,
+    .select,
+    .upload {
+        width: 95%;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .submit {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
+
+    .gender {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .cnic,
+    .error {
+        margin: 0 auto 0.5rem auto;
+        width: 95%;
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+/* Medium screens / Tablets 415px - 720px */
+@media (min-width: 415px) and (max-width: 720px) {
+    .formhead h1 {
+        font-size: 2rem;
+    }
+    .formhead h2 {
+        font-size: 2.4rem;
+    }
+
+    .formdiv {
+        max-width: 90%;
+        margin: 1.5rem auto;
+        padding: 0 15px;
+    }
+
+    form {
+        max-width: 450px;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    input,
+    .select,
+    .upload {
+        width: 95%;
+        font-size: 1.1rem;
+        padding: 11px 18px;
+    }
+
+    .submit {
+        width: 60%;
+        font-size: 1.3rem;
+        padding: 10px 0;
+    }
+
+    .gender {
+        font-size: 1.1rem;
+        padding: 9px 18px;
+    }
+
+    .cnic,
+    .error {
+        margin: 0 auto 0.5rem auto;
+        width: 95%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Larger screens 721px - 1024px */
+@media (min-width: 721px) and (max-width: 1024px) {
+    .formhead h1 {
+        font-size: 2.5rem;
+    }
+    .formhead h2 {
+        font-size: 2.8rem;
+    }
+
+    .formdiv {
+        max-width: 60%;
+        margin: 2rem auto;
+    }
+
+    form {
+        max-width: 500px;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    input,
+    .select,
+    .upload {
+        width: 98%;
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+
+    .submit {
+        width: 45%;
+        font-size: 1.4rem;
+    }
+
+    .gender {
+        font-size: 1.13rem;
+        padding: 10px 21px;
+    }
+
+    .cnic,
+    .error {
+        margin: 0 12px;
+        font-size: 1.2rem;
+    }
+}
+/* ------------------------ */
+/* Small-mid phones (e.g., Oppo A31 ~720px width) */
+@media (max-width: 740px) {
+    .formdiv {
+        max-width: 95%;       /* full width with small margin */
+        margin: 2rem auto;
+        padding: 0 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    input,
+    .select,
+    .upload {
+        width: 100%;          /* take full width */
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        margin: 0.5rem auto;
+    }
+
+    .submit {
+        width: 90%;
+        font-size: 1.3rem;
+        padding: 10px 0;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .gender {
+        font-size: 1.1rem;
+        padding: 9px 15px;
+    }
+
+    .cnic,
+    .error {
+        width: 100%;
+        margin: 0.5rem auto;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .formhead h1,
+    .formhead h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem auto;
+        width: 95%;
+    }
+}

@@ -84,4 +84,278 @@ body{
         font-style: italic;
         font-weight: 100;
     
+}
+
+/* ------------------------ */
+/* Responsive Media Queries Only */
+/* ------------------------ */
+
+/* Medium screens / tablets */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 2.5rem;
     }
+    .project-head h1 {
+        font-size: 2.2rem;
+        margin-left: 8px;
+    }
+    .main {
+        margin: 8rem auto;
+    }
+    .chairman {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .chairman h2 {
+        width: 80vw;
+        margin-left: 0;
+        text-align: center;
+    }
+    .achievements {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .achievement-text p {
+        width: 80vw;
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+    .achievements h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    .achievements img {
+        margin: 5rem auto;
+    }
+    .homeend {
+        font-size: 2.2rem;
+    }
+}
+
+/* Small screens / mobile */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+        margin: 1.5rem auto;
+    }
+    .project-head h1 {
+        font-size: 1.8rem;
+        margin-left: 5px;
+    }
+    .main {
+        margin: 6rem auto;
+    }
+    .chairman h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .chairman h2 {
+        width: 90vw;
+        font-size: 1.3rem;
+    }
+    .achievement-text p {
+        width: 90vw;
+        font-size: 1.3rem;
+    }
+    .achievements h1 {
+        font-size: 2rem;
+        margin: 3rem auto;
+    }
+    .achievements img {
+        margin: 4rem auto;
+        max-width: 90vw;
+    }
+    .homeend {
+        font-size: 2rem;
+    }
+}
+
+/* Extra small screens / very small mobile */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    .project-head h1 {
+        font-size: 1.5rem;
+    }
+    .chairman h1 {
+        font-size: 1.6rem;
+    }
+    .chairman h2 {
+        font-size: 1.1rem;
+        width: 95vw;
+    }
+    .achievement-text p {
+        font-size: 1.1rem;
+        width: 95vw;
+        margin: 0.8rem;
+    }
+    .achievements h1 {
+        font-size: 1.8rem;
+    }
+    .achievements img {
+        margin: 3rem auto;
+        max-width: 95vw;
+    }
+    .homeend {
+        font-size: 1.8rem;
+    }
+}
+/* ------------------------ */
+/* Small Screens / iPhones */
+@media (max-width: 414px) {
+    .header h1 {
+        font-size: 1.5rem;
+        margin: 1rem auto;
+        text-align: center; /* Ensure center */
+        width: 90%;          /* Prevent overflow */
+    }
+
+    .project-head h1 {
+        font-size: 1.4rem;
+        margin: 1rem auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .main {
+        margin: 5rem auto;
+        padding: 0 10px;
+        text-align: center; /* Center all child elements if needed */
+    }
+
+    .chairman {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: auto;
+        width: 95%; /* Full width within viewport */
+    }
+
+    .chairman h1, .chairman h2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .ytvideo {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .achievements {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: auto;
+        width: 95%;
+    }
+
+    .achievement-text p {
+        width: 100%;
+        font-size: 1rem;
+        margin: 0.6rem auto;
+        line-height: 1.8rem;
+        text-align: center; /* Center text */
+    }
+
+    .achievements h1 {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .achievements img {
+        margin: 2rem auto;
+        max-width: 100%;
+        display: block;
+    }
+
+    .homeend {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+/* ------------------------ */
+/* Small Screens / iPhones - True Centering */
+@media (max-width: 414px) {
+
+    /* Header */
+    .header h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    /* Project Head */
+    .project-head h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto 1rem auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    /* Chairman section */
+    .chairman {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .chairman h1, .chairman h2 {
+        margin: 0.5rem auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    /* Achievements section */
+    .achievements {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .achievement-text p {
+        width: 90%;
+        margin: 0.5rem auto;
+        text-align: center;
+    }
+    .achievements h1 {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .achievements img {
+        margin: 2rem auto;
+        max-width: 90%;
+    }
+
+    /* Homeend */
+    .homeend {
+        font-size: 1.6rem;
+        margin: 2rem auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Video */
+    .ytvideo {
+        width: 90%;
+        margin: 1rem auto;
+        display: block;
+    }
+}
